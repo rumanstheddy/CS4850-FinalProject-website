@@ -25,21 +25,15 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-        <h1 class="mt-5">Assignment 2: Berry Ninja and the land of the lost oranges</h1>
-        <p class="lead">This webpage contains information for a Platformer game we created as a part of the course CS
+        <h1 class="mt-5">Final Project: Engine</h1>
+        <p class="lead">This webpage contains information for a Game Engine we created as a part of the course CS
             4850/5850 Building Game Engines.</p>
         <h3>Special Features</h3>
         <ul>
-            <li>Double Jump!
-            </li>
-            <li>Different sound effects based player actions!
-            </li>
-            <li>Checkpoints - don't let your progress go in vain!
-            </li>
-            <li>Multiple enemy types!
-            </li>
+            <!-- Special features go here! -->
         </ul>
         <h3>Binary file</h3>
+        <!-- Link to the binary files goes here -->
         <p>Use this <a href="https://github.com/rumanstheddy/CS4850_Platformer_website/tree/main/binary">link</a> to get
             the
             executable
@@ -55,86 +49,22 @@
         <h3>Screenshots</h3>
         <div class="row">
             <div class="column">
-                <img src="./assets/ss3.png" alt="screenshot 1" style="width:100%">
+                <!-- Screenshots go here -->
             </div>
             <div class="column">
-                <img src="./assets/ss2.png" alt="screenshot 2" style="width:100%">
+                <!-- Screenshots go here -->
             </div>
             <div class="column">
-                <img src="./assets/ss1.png" alt="screenshot 3" style="width:100%">
+                <!-- Screenshots go here -->
             </div>
         </div>
         <h3>Post Mortem</h3>
         <ul>
-            <li>Levels
-                <p>
-                    Our game currently supports only one level so first thing to improve or work upon would adding more
-                    levels. Also, the level right now is fairly simple to play, making it more challenging and also more
-                    engaging could be fun.
-                </p>
-            <li>Main Menu and Pause Screen
-                <p>
-                    When a user starts up the game, they are taken directly into it without any menu for navigation. A
-                    Main menu to start, read instructions, select levels and quit the game needs to be implemented.
-                    Also, we might have to add a Pause functionality and a Pause screen to the game to improve the user
-                    experience.
-                </p>
-            <li>Multiple Language Support
-                <p>
-                    The game currently supports English to display text on screen. Additional language support can be
-                    added.
-                </p>
-            <li>Collisions
-                <p>
-                    Collision logic in the game is simple and does most of the job. But when the player can see some
-                    jagged movement while colliding with the tiles. A much robust collision detection and response
-                    physics needs to added to make the player movement smooth and seamless.
-                </p>
-            <li>Enemy AI
-                <p>
-                    Enemy AI in our game has a simple behavior - patrol a given line from one edge to the other. This
-                    can be improved upon by making the AI pursue the player in a given range or zone.
-                </p>
-            <li>Fighting back
-                <p>
-                    The player cannot attack or cause damage to the enemies present in the game. We want that to change:
-                    giving the player a weapon such as a sword or making the player eliminate enemies by jumping on them
-                    in Mario fashion can be be worked upon.
-                </p>
-            <li>Different Tile properties
-                <p>
-                    All the tiles in the game have a simple physics component which checks for collisions and performs
-                    the necessary collision response. We would like to add custom properties to certain tiles such as
-                    making them more slippery, dishing out damage when walked upon etc.
-                </p>
+            <!-- Post mortem goes here -->
         </ul>
         <h3>Documentation</h3>
+        <!-- Update the documentation page -->
         <p>Use this <a href="./documentation/index.html">link</a> to go to the documentation page.</p>
-
-        <h3>Instructions: using the Tile Editor</h3>
-        <p>The tile editor has two options PNG and BMP
-            For PNG, the best results are achieved when the tiles are provided as individual png tiles and they are
-            rendered at their original resoultion. The tile editor
-            can scroll infinitely so this the dimensions are not an issue.
-            In case of PNG, the names of the tiles should be numbers in increasing order like 0.png, 1.png, etc. You can
-            see such a sample in Assets folder.
-            To create a tile map, you simply need to enter these names seperated by a single whitespace. If the format
-            is incorrect tiles will not be render. You can click the "Update Config" button to see if what you have
-            entered is valid or not.</p>
-        <p>
-            Loading and Saving tile maps.
-            All tile maps are loaded from and saved to Assets/TileMaps folder. And the names of the file have to be
-            relative to that. For instance, a sample map has been provided which was created using assets available in
-            the folder - sample1.txt.
-            To see how this map looks, you simply need to click "Load Map" and type sample1.txt in the file name. The
-            map should be loaded.
-            You can now use arrow keys to navigate around.</p>
-        <p>
-            BMP works in a similar way in terms of loading and saving, the only difference is that tile editor only
-            supports equal sized tiles and these tiles should be from a single bmp file located in
-            Assets/Tiles/bmp/Tiles.bmp. In this case also you will enter numbers, for tiles but numbers here represent
-            the individual tiles that are generated when you slice the bmp image into small rectangles of given width
-            and height. You will be asked to enter this information if you select bmp. </p>
     </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

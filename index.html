@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Assignment 2: Platformer</title>
+    <title>Final Project: Pog Engine</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/">
 
@@ -66,12 +66,49 @@
             <img width="1300" height="800" src="./assets/gArchitecture.png">
         </div>
         <h2>Post Mortem</h2>
-        <ul style="padding-bottom: 20px">
+        <p>
             <!-- Post mortem goes here -->
-        </ul>
+            For our game engine, we followed Unity’s game engine style of being a script based game engine. We wanted to
+            give our users flexibility to create their own type of game. The users are able to create their own classes
+            (based on GameObject) and add (or not add) various components such as the SpriteComponent,
+            TransformComponent, SoundComponent, etc. The user can also determine if they want their object to be an
+            AnimateObject or a PlayerObject (which they both inherit from the GameObject class). We included a tile
+            editor GUI to let the users quickly and easily create their tilemaps with a spritesheet. In general, we feel
+            that we have created a well structured and flexible game engine that gives great flexibility and freedom to
+            the users on what type of game they want to create.
+        </p>
+        <p>
+            Our special game feature is the gravitational fields that can be created through our game engine. We created
+            a realistic physics engine that simulates a gravitational pull, such as planet orbit systems. We were able
+            to do this by creating a universal force that attracts GameObjects in a circular/elliptical motion. The user
+            can modify the gravitational radinal strength and area. Additionally, this game engine can be utilized as a
+            simulator for planetary orbits and planetary systems. The gravitational pulls in our physics engine can
+            simulate realistic orbits whilst allowing the user to customize and simulate various scientific experiences.
+        </p>
+
+        <p>
+            Some of the hardships we faced were creating a realistic and functional collision between the different
+            types of GameObjects (AnimateObject and PlayerObject as well). We did this by creating callbacks to handle
+            events from python (which the user can modify) for specific objects. Similarly, we utilized callback
+            methodology to set up our controllers. Another hardship was initially figuring out how to create a script
+            based game engine that is easy to program and give users great flexibility. We envisioned the Unity game
+            engine with Component features where the users can add components at free will to create their own unique
+            classes and GameObjects. We thought python/pybind was an easy scripting language that new users can easily
+            utilize as well, especially with all of the methods provided through PyBind.
+        </p>
+        <p>
+            In general, we think that our game engine was successful. We were able to include various game engine
+            elements and techniques into ours such as the resource manager, tile editor, gameobject components, physics
+            engine, etc. We were able to work effectively as a team (distributing tasks and communicating constantly to
+            update others). However, there are definitely new features that we would like to implement for the future. A
+            feature we would like to implement is the support of 3D games. Our emphasis was on realistic orbits in 2D.
+            We think it will be really exciting (and challenging) to create a 3D physics engine that supports 3D
+            gravitational orbits. This will allow for a more realistic and exciting gameplay and game design.
+        </p>
         <h2>Documentation</h2>
         <!-- Update the documentation page -->
-        <p style="padding-bottom: 20px">Use this <a href="./documentation/index.html">link</a> to go to the documentation page.</p>
+        <p style="padding-bottom: 20px">Use this <a href="./documentation/index.html">link</a> to go to the
+            documentation page.</p>
     </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

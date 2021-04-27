@@ -25,24 +25,37 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-        <h1 class="mt-5">Final Project: Engine</h1>
+        <h1 class="mt-5" style="padding-bottom: 10px;">Final Project : Pog Engine</h1>
         <p class="lead">This webpage contains information for a Game Engine we created as a part of the course CS
             4850/5850 Building Game Engines.</p>
-        <h2>Special Features</h2>
-        <ul>
-            <!-- Special features go here! -->
-        </ul>
+
         <h2>Binary file</h2>
         <!-- Link to the binary files goes here -->
-        <p>Use this <a href="https://github.com/rumanstheddy/CS4850_Platformer_website/tree/main/binary">link</a> to get
-            the
-            executable
-            files.</p>
-        </div>
-        <h2>Trailer</h2>
+        <p style="padding-bottom: 10px;">Please use <a
+                href="https://github.com/Spring21BuildingGameEngines/finalproject-final-pog/tree/main/Engine">this</a>
+            link and follow the instructions in the README file to generate the binary files.</p>
+
+        <h2>Additional Instructions</h2>
+        <ol style="padding-bottom: 20px;">
+            <li> Navigate to the ./Engine folder.</li>
+            <li> run the command: python3 build_tile_editor.py</li>
+            <li> From the same folder, run the command: ./bin/tile_editor.exe tilewidth tileheight, where tilewidth
+                and
+                tileheight are integers representing the dimensions of a single tile</li>
+            <li> Left click on a tile in the menu to select the tile.</li>
+            <li> You can insert multiple tiles quickly by dragging the cursor across the screen whil holding the left
+                mouse button down.</li>
+            <li> You can also erase tiles by clicking the grid with the right mouse button</li>
+            <li> Use the arrow keys to move the camera</li>
+            <li> After you exit the tiel editor, your tilemap is automatically saved and will automatically load when
+                the
+                next game begins.</li>
+        </ol>
+
+        <h2>Video</h2>
         <div style="display: flex; justify-content: center; padding-bottom: 20px;">
-            <iframe style="display: block;
-        border-style:none;" width="560" height="315" src="https://www.youtube.com/embed/CVmyVcldleg" frameborder="0"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qILdYkznJ58"
+                title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
@@ -61,10 +74,11 @@
                 <img src="./assets/ss3.png" alt="screenshot 1" style="width:100%; height:100%">
             </div>
         </div>
-        <h2>Trailer</h2>
+        <h2>Engine Architecture</h2>
         <div style="display: flex; justify-content: center; padding-bottom: 20px">
             <img width="1300" height="800" src="./assets/gArchitecture.png">
         </div>
+
         <h2>Post Mortem</h2>
         <p>
             <!-- Post mortem goes here -->
